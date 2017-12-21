@@ -1,0 +1,28 @@
+server:
+    context-path: /demo
+    port: 80
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://*****?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: 123456
+  jpa:
+    hibernate:
+      ddl-auto: update
+      show-sql: true
+  http:
+    multipart:
+      max-file-size: 5Mb
+      max-request-size: 5Mb
+  data:
+    mongodb:
+      uri: mongodb://******/test
+      connections-per-host: 100
+wechat:
+   mpAppId: *****
+   mpAppSecret: *****
+newsUrl:
+   url: http://www.linge.wang
+   contextPath: /demo
+   wxPhone: http://xinlovezhang.top:8080
